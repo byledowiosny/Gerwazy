@@ -1,0 +1,33 @@
+2016-01-HC.dat    Hours,Close   without Header by choose from HCHL; rows 482
+2016-01-HH.dat    Hours,High    without Header by choose from HCHL; rows 482
+2016-01-HL.dat    Hours,Low     without Header by choose from HCHL; rows 482
+2016-01-HM.dat    Hours,Mode    without Header by choose from HVMM; rows 482
+
+2016-01-MC.dat    Minutes,Close without Header by choose from MCHL; rows 28910
+2016-01-MH.dat    Minutes,High  without Header by choose from MCHL; rows 28910
+2016-01-ML.dat    Minutes,Low   without Header by choose from MCHL; rows 28910
+2016-01-MM.dat    Minutes,Mode  without Header by choose from MVMM; rows 28910
+
+2016-01-SC.dat    Seconds,Close without Header by choose from SCHL; rows to do
+2016-01-SH.dat    Seconds,High  without Header by choose from SCHL; rows to do
+2016-01-SL.dat    Seconds,Low   without Header by choose from SCHL; rows to do
+2016-01-SM.dat    Seconds,Mode  without Header by choose from SVMM; rows to do
+
+2016-01-HCHL.dat  Hours,Close,High,Low    by HCHL.jl    from Ticks; rows 482; too slow->f95
+2016-01-MCHL.dat  Minutes,Close,High,Low  by MCHL.jl    from Ticks; rows 28910; too slow->f95
+2016-01-SCHL.dat  Seconds,Close,High,Low                from Ticks; to do by f95
+
+2016-01-HTV.dat   Hours,Tick,Volume    without Header by htv from Ticks; rows 482
+2016-01-MTV.dat   Minutes,Tick,Volume  without Header by mtv from Ticks; rows 28910
+2016-01-STV.dat   Seconds,Tick,Volume  without Header by stv from Ticks; rows see by choose
+
+2016-01-HVMM.dat  Hours,Volume,Mode,Mode    by hvmm from HTV
+2016-01-MVMM.dat  Minutes,Volume,Mode,Mode  by mvmm from MTV
+2016-01-SVMM.dat  Seconds,Volume,Mode,Mode  by svmm from STV
+
+2016-01-Ticks.csv  Time (UTC),Ask,Bid,AskVolume,BidVolume from Dukascopy
+
+2016-01-HMSVT.dat Hours,Mode,Scale,Volume,Ticks   by HMSVT.jl from Ticks; rows 482; too slow->f95
+2016-01-MMSVT.dat Minutes,Mode,Scale,Volume,Ticks by MMSVT.jl from Ticks; rows 28910; too slow->f95
+
+TO DO: finish DatRoot et pass to Gerwazy (f95) from HTV,MTV,STV

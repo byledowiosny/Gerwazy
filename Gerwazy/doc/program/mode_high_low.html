@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	 <meta name="description" content="Time Series Analysis">
+    
+    <meta name="author" content="Georges Tomaka" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>mode_high_low &ndash; gerwazy</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">gerwazy </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+				
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+		 aria-expanded="false">Contents <span class="caret"></span></a>
+	      <ul class="dropdown-menu">
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+				
+				
+            <li><a href="../lists/modules.html">Modules</a></li>
+				
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+				
+								
+            <li><a href="../lists/types.html">Derived Types</a></li>
+				
+				
+            <li><a href="../lists/programs.html">Programs</a></li>
+				
+            </ul>
+            </li>
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/programs.html">Programs</a></li>
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>mode_high_low
+    <small>Program</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+	  data-placement="bottom" data-html="true"
+	  title="55.0% of total for programs.">55 statements</a>
+     </li> 
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/mode_high_low.f90"> Source File</a></li>
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+     <li><a href='../sourcefile/mode_high_low.f90.html'>mode_high_low.f90</a></li>
+  
+     <li class="active">mode_high_low</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-v_tick">v_tick</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-tick">tick</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-size">size</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-lun%7E2">lun</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-success%7E2">success</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-line%7E2">line</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-filen">FILEN</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-lnsize">LNSIZE</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-kernel">KERNEL</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-str">STR</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-et">ET</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-time">time</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-start_time">start_time</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-tick_time">tick_time</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-volume">volume</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-sigma_volume">sigma_volume</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <hr>
+  
+
+<div class="panel panel-default">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#allprogs-0">All Programs</a></h3></div>
+  <div id="allprogs-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/gerwazy.html">gerwazy</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html">mode_high_low</a>
+      
+    </div>
+  </div>
+</div>
+
+
+</div>  
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+  
+    <ul class="list-inline">
+      <li><h4>Uses:</h4></li>
+      
+      <li><a href='../module/readline_module.html'>readline_module</a></li>
+      
+      <li><a href='../module/welcome_module.html'>welcome_module</a></li>
+      
+      <li><a href='../module/real_vectors.html'>REAL_VECTORS</a></li>
+      
+      <li><a href='../module/mode_module.html'>mode_module</a></li>
+      
+    </ul>
+    
+                <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: program~~mode_high_low~~UsesGraph Pages: 1 -->
+<svg id="programmode_high_lowUsesGraph" width="355pt" height="158pt"
+ viewBox="0.00 0.00 355.00 158.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="program~~mode_high_low~~UsesGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 154)">
+<title>program~~mode_high_low~~UsesGraph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-154 351,-154 351,4 -4,4"/>
+<!-- program~mode_high_low -->
+<g id="program~~mode_high_low~~UsesGraph_node1" class="node"><title>program~mode_high_low</title>
+<polygon fill="none" stroke="black" points="347,-87 259,-87 259,-63 347,-63 347,-87"/>
+<text text-anchor="middle" x="303" y="-72.6" font-family="Helvetica,sans-Serif" font-size="10.50">mode_high_low</text>
+</g>
+<!-- module~mode_module -->
+<g id="program~~mode_high_low~~UsesGraph_node2" class="node"><title>module~mode_module</title>
+<g id="a_program~~mode_high_low~~UsesGraph_node2"><a xlink:href="../module/mode_module.html" xlink:title="mode_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="215.5,-150 134.5,-150 134.5,-126 215.5,-126 215.5,-150"/>
+<text text-anchor="middle" x="175" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mode_module</text>
+</a>
+</g>
+</g>
+<!-- module~mode_module&#45;&gt;program~mode_high_low -->
+<g id="program~~mode_high_low~~UsesGraph_edge5" class="edge"><title>module~mode_module&#45;&gt;program~mode_high_low</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M203.981,-125.875C210.275,-123.043 216.897,-119.981 223,-117 239.028,-109.17 256.575,-99.9125 271.051,-92.0844"/>
+<polygon fill="#000000" stroke="#000000" points="272.962,-95.0291 280.074,-87.1759 269.617,-88.8801 272.962,-95.0291"/>
+</g>
+<!-- module~real_vectors -->
+<g id="program~~mode_high_low~~UsesGraph_node3" class="node"><title>module~real_vectors</title>
+<g id="a_program~~mode_high_low~~UsesGraph_node3"><a xlink:href="../module/real_vectors.html" xlink:title="REAL_VECTORS">
+<polygon fill="#337ab7" stroke="#337ab7" points="223,-108 127,-108 127,-84 223,-84 223,-108"/>
+<text text-anchor="middle" x="175" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">REAL_VECTORS</text>
+</a>
+</g>
+</g>
+<!-- module~real_vectors&#45;&gt;program~mode_high_low -->
+<g id="program~~mode_high_low~~UsesGraph_edge6" class="edge"><title>module~real_vectors&#45;&gt;program~mode_high_low</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M223.276,-88.1206C231.517,-86.7471 240.142,-85.3097 248.535,-83.9108"/>
+<polygon fill="#000000" stroke="#000000" points="249.329,-87.3269 258.617,-82.2305 248.178,-80.4221 249.329,-87.3269"/>
+</g>
+<!-- module~readline_module -->
+<g id="program~~mode_high_low~~UsesGraph_node4" class="node"><title>module~readline_module</title>
+<g id="a_program~~mode_high_low~~UsesGraph_node4"><a xlink:href="../module/readline_module.html" xlink:title="readline_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="221,-66 129,-66 129,-42 221,-42 221,-66"/>
+<text text-anchor="middle" x="175" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">readline_module</text>
+</a>
+</g>
+</g>
+<!-- module~readline_module&#45;&gt;program~mode_high_low -->
+<g id="program~~mode_high_low~~UsesGraph_edge7" class="edge"><title>module~readline_module&#45;&gt;program~mode_high_low</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M221.133,-61.5222C230.156,-63.026 239.712,-64.6187 248.974,-66.1623"/>
+<polygon fill="#000000" stroke="#000000" points="248.429,-69.6196 258.868,-67.8113 249.579,-62.7149 248.429,-69.6196"/>
+</g>
+<!-- module~welcome_module -->
+<g id="program~~mode_high_low~~UsesGraph_node5" class="node"><title>module~welcome_module</title>
+<g id="a_program~~mode_high_low~~UsesGraph_node5"><a xlink:href="../module/welcome_module.html" xlink:title="welcome_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="223,-24 127,-24 127,-0 223,-0 223,-24"/>
+<text text-anchor="middle" x="175" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">welcome_module</text>
+</a>
+</g>
+</g>
+<!-- module~welcome_module&#45;&gt;program~mode_high_low -->
+<g id="program~~mode_high_low~~UsesGraph_edge8" class="edge"><title>module~welcome_module&#45;&gt;program~mode_high_low</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M203.981,-24.1246C210.275,-26.9566 216.897,-30.0186 223,-33 239.028,-40.8302 256.575,-50.0875 271.051,-57.9156"/>
+<polygon fill="#000000" stroke="#000000" points="269.617,-61.1199 280.074,-62.8241 272.962,-54.9709 269.617,-61.1199"/>
+</g>
+<!-- module~qsort_module -->
+<g id="program~~mode_high_low~~UsesGraph_node6" class="node"><title>module~qsort_module</title>
+<g id="a_program~~mode_high_low~~UsesGraph_node6"><a xlink:href="../module/qsort_module.html" xlink:title="qsort_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="84.5,-150 6.5,-150 6.5,-126 84.5,-126 84.5,-150"/>
+<text text-anchor="middle" x="45.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">qsort_module</text>
+</a>
+</g>
+</g>
+<!-- module~qsort_module&#45;&gt;module~mode_module -->
+<g id="program~~mode_high_low~~UsesGraph_edge1" class="edge"><title>module~qsort_module&#45;&gt;module~mode_module</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M84.7542,-138C97.1403,-138 111.064,-138 124.163,-138"/>
+<polygon fill="#000000" stroke="#000000" points="124.447,-141.5 134.447,-138 124.447,-134.5 124.447,-141.5"/>
+</g>
+<!-- module~data_module -->
+<g id="program~~mode_high_low~~UsesGraph_node7" class="node"><title>module~data_module</title>
+<g id="a_program~~mode_high_low~~UsesGraph_node7"><a xlink:href="../module/data_module.html" xlink:title="DATA_MODULE">
+<polygon fill="#337ab7" stroke="#337ab7" points="91,-108 0,-108 0,-84 91,-84 91,-108"/>
+<text text-anchor="middle" x="45.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">DATA_MODULE</text>
+</a>
+</g>
+</g>
+<!-- module~data_module&#45;&gt;module~real_vectors -->
+<g id="program~~mode_high_low~~UsesGraph_edge2" class="edge"><title>module~data_module&#45;&gt;module~real_vectors</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M91.0933,-96C99.2618,-96 107.893,-96 116.378,-96"/>
+<polygon fill="#000000" stroke="#000000" points="116.614,-99.5001 126.614,-96 116.614,-92.5001 116.614,-99.5001"/>
+</g>
+<!-- iso_fortran_env -->
+<g id="program~~mode_high_low~~UsesGraph_node8" class="node"><title>iso_fortran_env</title>
+<g id="a_program~~mode_high_low~~UsesGraph_node8"><a xlink:href="https://gcc.gnu.org/onlinedocs/gfortran/ISO_005fFORTRAN_005fENV.html" xlink:title="iso_fortran_env">
+<polygon fill="#337ab7" stroke="#337ab7" points="89,-66 2,-66 2,-42 89,-42 89,-66"/>
+<text text-anchor="middle" x="45.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_fortran_env</text>
+</a>
+</g>
+</g>
+<!-- iso_fortran_env&#45;&gt;module~readline_module -->
+<g id="program~~mode_high_low~~UsesGraph_edge3" class="edge"><title>iso_fortran_env&#45;&gt;module~readline_module</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M89.3103,-54C98.7603,-54 108.901,-54 118.764,-54"/>
+<polygon fill="#000000" stroke="#000000" points="118.903,-57.5001 128.902,-54 118.902,-50.5001 118.903,-57.5001"/>
+</g>
+<!-- module~chdir_module -->
+<g id="program~~mode_high_low~~UsesGraph_node9" class="node"><title>module~chdir_module</title>
+<g id="a_program~~mode_high_low~~UsesGraph_node9"><a xlink:href="../module/chdir_module.html" xlink:title="chdir_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="84,-24 7,-24 7,-0 84,-0 84,-24"/>
+<text text-anchor="middle" x="45.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">chdir_module</text>
+</a>
+</g>
+</g>
+<!-- module~chdir_module&#45;&gt;module~welcome_module -->
+<g id="program~~mode_high_low~~UsesGraph_edge4" class="edge"><title>module~chdir_module&#45;&gt;module~welcome_module</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M84.0646,-12C94.3002,-12 105.626,-12 116.69,-12"/>
+<polygon fill="#000000" stroke="#000000" points="116.739,-15.5001 126.739,-12 116.739,-8.5001 116.739,-15.5001"/>
+</g>
+</g>
+</svg>
+</div>
+                <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+                <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                      </div>
+                      <div class="modal-body">
+                        
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="490pt" height="32pt"
+ viewBox="0.00 0.00 489.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-28 485.5,-28 485.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node"><title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,-0 54,-0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node"><title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="139.5,-24 72.5,-24 72.5,-0 139.5,-0 139.5,-24"/>
+<text text-anchor="middle" x="106" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node"><title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="222,-24 158,-24 158,-0 222,-0 222,-24"/>
+<text text-anchor="middle" x="190" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node"><title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="294,-24 240,-24 240,-0 294,-0 294,-24"/>
+<text text-anchor="middle" x="267" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node"><title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="366,-24 312,-24 312,-0 366,-0 366,-24"/>
+<text text-anchor="middle" x="339" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node"><title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="481.5,-24 384.5,-24 384.5,-0 481.5,-0 481.5,-24"/>
+<text text-anchor="middle" x="433" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a parent (sub)module to the submodule which is
+    descended from it. Dashed arrows point from a module being used to the
+    module or program unit using it.
+    </p>
+    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+    
+
+    <br><br>
+    
+    
+     <h3>Calls</h3>
+     
+                <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: program~~mode_high_low~~CallsGraph Pages: 1 -->
+<svg id="programmode_high_lowCallsGraph" width="428pt" height="368pt"
+ viewBox="0.00 0.00 428.00 368.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="program~~mode_high_low~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 364)">
+<title>program~~mode_high_low~~CallsGraph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-364 424,-364 424,4 -4,4"/>
+<!-- program~mode_high_low -->
+<g id="program~~mode_high_low~~CallsGraph_node1" class="node"><title>program~mode_high_low</title>
+<polygon fill="none" stroke="black" points="88,-192 7.10543e-15,-192 7.10543e-15,-168 88,-168 88,-192"/>
+<text text-anchor="middle" x="44" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50">mode_high_low</text>
+</g>
+<!-- proc~welcome -->
+<g id="program~~mode_high_low~~CallsGraph_node2" class="node"><title>proc~welcome</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node2"><a xlink:href="../proc/welcome.html" xlink:title="welcome">
+<polygon fill="#d9534f" stroke="#d9534f" points="215,-360 160,-360 160,-336 215,-336 215,-360"/>
+<text text-anchor="middle" x="187.5" y="-345.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">welcome</text>
+</a>
+</g>
+</g>
+<!-- program~mode_high_low&#45;&gt;proc~welcome -->
+<g id="program~~mode_high_low~~CallsGraph_edge6" class="edge"><title>program~mode_high_low&#45;&gt;proc~welcome</title>
+<path fill="none" stroke="#000000" d="M48.2096,-192.239C56.1749,-220.241 79.4933,-289.443 124,-327 131.452,-333.289 140.866,-337.717 150.11,-340.828"/>
+<polygon fill="#000000" stroke="#000000" points="149.393,-344.265 159.973,-343.711 151.357,-337.546 149.393,-344.265"/>
+</g>
+<!-- str2et -->
+<g id="program~~mode_high_low~~CallsGraph_node3" class="node"><title>str2et</title>
+<polygon fill="#777777" stroke="#777777" points="214.5,-318 160.5,-318 160.5,-294 214.5,-294 214.5,-318"/>
+<text text-anchor="middle" x="187.5" y="-303.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">str2et</text>
+</g>
+<!-- program~mode_high_low&#45;&gt;str2et -->
+<g id="program~~mode_high_low~~CallsGraph_edge7" class="edge"><title>program~mode_high_low&#45;&gt;str2et</title>
+<path fill="none" stroke="#000000" d="M51.036,-192.282C62.3586,-214.086 88.8488,-259.641 124,-285 131.84,-290.656 141.309,-294.866 150.479,-297.968"/>
+<polygon fill="#000000" stroke="#000000" points="149.636,-301.369 160.221,-300.915 151.663,-294.669 149.636,-301.369"/>
+</g>
+<!-- proc~vector_create -->
+<g id="program~~mode_high_low~~CallsGraph_node4" class="node"><title>proc~vector_create</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node4"><a xlink:href="../proc/vector_create.html" xlink:title="vector_create">
+<polygon fill="#d9534f" stroke="#d9534f" points="226.5,-276 148.5,-276 148.5,-252 226.5,-252 226.5,-276"/>
+<text text-anchor="middle" x="187.5" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vector_create</text>
+</a>
+</g>
+</g>
+<!-- program~mode_high_low&#45;&gt;proc~vector_create -->
+<g id="program~~mode_high_low~~CallsGraph_edge8" class="edge"><title>program~mode_high_low&#45;&gt;proc~vector_create</title>
+<path fill="none" stroke="#000000" d="M57.412,-192.218C72.1835,-206.178 98.1177,-228.905 124,-243 128.594,-245.502 133.54,-247.78 138.566,-249.834"/>
+<polygon fill="#000000" stroke="#000000" points="137.666,-253.236 148.257,-253.509 140.148,-246.691 137.666,-253.236"/>
+</g>
+<!-- proc~readline -->
+<g id="program~~mode_high_low~~CallsGraph_node5" class="node"><title>proc~readline</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node5"><a xlink:href="../proc/readline.html" xlink:title="readline">
+<polygon fill="#d9534f" stroke="#d9534f" points="214.5,-234 160.5,-234 160.5,-210 214.5,-210 214.5,-234"/>
+<text text-anchor="middle" x="187.5" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">readline</text>
+</a>
+</g>
+</g>
+<!-- program~mode_high_low&#45;&gt;proc~readline -->
+<g id="program~~mode_high_low~~CallsGraph_edge9" class="edge"><title>program~mode_high_low&#45;&gt;proc~readline</title>
+<path fill="none" stroke="#000000" d="M85.5482,-192.036C106.088,-198.132 130.808,-205.47 150.646,-211.358"/>
+<polygon fill="#000000" stroke="#000000" points="149.656,-214.715 160.239,-214.205 151.648,-208.004 149.656,-214.715"/>
+</g>
+<!-- proc~vector_append -->
+<g id="program~~mode_high_low~~CallsGraph_node6" class="node"><title>proc~vector_append</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node6"><a xlink:href="../proc/vector_append.html" xlink:title="vector_append">
+<polygon fill="#d9534f" stroke="#d9534f" points="229.5,-192 145.5,-192 145.5,-168 229.5,-168 229.5,-192"/>
+<text text-anchor="middle" x="187.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vector_append</text>
+</a>
+</g>
+</g>
+<!-- program~mode_high_low&#45;&gt;proc~vector_append -->
+<g id="program~~mode_high_low~~CallsGraph_edge10" class="edge"><title>program~mode_high_low&#45;&gt;proc~vector_append</title>
+<path fill="none" stroke="#000000" d="M88.2235,-180C103.015,-180 119.709,-180 135.084,-180"/>
+<polygon fill="#000000" stroke="#000000" points="135.477,-183.5 145.477,-180 135.477,-176.5 135.477,-183.5"/>
+</g>
+<!-- proc~vector_delete_elements -->
+<g id="program~~mode_high_low~~CallsGraph_node7" class="node"><title>proc~vector_delete_elements</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node7"><a xlink:href="../proc/vector_delete_elements.html" xlink:title="vector_delete_elements">
+<polygon fill="#d9534f" stroke="#d9534f" points="251,-150 124,-150 124,-126 251,-126 251,-150"/>
+<text text-anchor="middle" x="187.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vector_delete_elements</text>
+</a>
+</g>
+</g>
+<!-- program~mode_high_low&#45;&gt;proc~vector_delete_elements -->
+<g id="program~~mode_high_low~~CallsGraph_edge11" class="edge"><title>program~mode_high_low&#45;&gt;proc~vector_delete_elements</title>
+<path fill="none" stroke="#000000" d="M85.5482,-167.964C101.238,-163.307 119.368,-157.926 135.897,-153.02"/>
+<polygon fill="#000000" stroke="#000000" points="137.355,-156.238 145.946,-150.037 135.363,-149.528 137.355,-156.238"/>
+</g>
+<!-- proc~vector_size -->
+<g id="program~~mode_high_low~~CallsGraph_node8" class="node"><title>proc~vector_size</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node8"><a xlink:href="../proc/vector_size.html" xlink:title="vector_size">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="221,-108 154,-108 154,-84 221,-84 221,-108"/>
+<text text-anchor="middle" x="187.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vector_size</text>
+</a>
+</g>
+</g>
+<!-- program~mode_high_low&#45;&gt;proc~vector_size -->
+<g id="program~~mode_high_low~~CallsGraph_edge12" class="edge"><title>program~mode_high_low&#45;&gt;proc~vector_size</title>
+<path fill="none" stroke="#000000" d="M57.412,-167.782C72.1835,-153.822 98.1177,-131.095 124,-117 130.214,-113.616 137.071,-110.642 143.898,-108.077"/>
+<polygon fill="#000000" stroke="#000000" points="145.518,-111.218 153.801,-104.612 143.206,-104.611 145.518,-111.218"/>
+</g>
+<!-- furnsh -->
+<g id="program~~mode_high_low~~CallsGraph_node9" class="node"><title>furnsh</title>
+<polygon fill="#777777" stroke="#777777" points="214.5,-66 160.5,-66 160.5,-42 214.5,-42 214.5,-66"/>
+<text text-anchor="middle" x="187.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">furnsh</text>
+</g>
+<!-- program~mode_high_low&#45;&gt;furnsh -->
+<g id="program~~mode_high_low~~CallsGraph_edge13" class="edge"><title>program~mode_high_low&#45;&gt;furnsh</title>
+<path fill="none" stroke="#000000" d="M51.036,-167.718C62.3586,-145.914 88.8488,-100.359 124,-75 131.84,-69.3441 141.309,-65.1344 150.479,-62.0323"/>
+<polygon fill="#000000" stroke="#000000" points="151.663,-65.3309 160.221,-59.0849 149.636,-58.6308 151.663,-65.3309"/>
+</g>
+<!-- proc~stat_mode -->
+<g id="program~~mode_high_low~~CallsGraph_node10" class="node"><title>proc~stat_mode</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node10"><a xlink:href="../proc/stat_mode.html" xlink:title="stat_mode">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="219,-24 156,-24 156,-0 219,-0 219,-24"/>
+<text text-anchor="middle" x="187.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">stat_mode</text>
+</a>
+</g>
+</g>
+<!-- program~mode_high_low&#45;&gt;proc~stat_mode -->
+<g id="program~~mode_high_low~~CallsGraph_edge14" class="edge"><title>program~mode_high_low&#45;&gt;proc~stat_mode</title>
+<path fill="none" stroke="#000000" d="M48.2096,-167.761C56.1749,-139.759 79.4933,-70.5566 124,-33 130.406,-27.5943 138.261,-23.5629 146.212,-20.5618"/>
+<polygon fill="#000000" stroke="#000000" points="147.459,-23.8361 155.867,-17.3891 145.274,-17.186 147.459,-23.8361"/>
+</g>
+<!-- proc~count_lines -->
+<g id="program~~mode_high_low~~CallsGraph_node11" class="node"><title>proc~count_lines</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node11"><a xlink:href="../proc/count_lines.html" xlink:title="count_lines">
+<polygon fill="#d9534f" stroke="#d9534f" points="387,-360 320,-360 320,-336 387,-336 387,-360"/>
+<text text-anchor="middle" x="353.5" y="-345.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">count_lines</text>
+</a>
+</g>
+</g>
+<!-- proc~welcome&#45;&gt;proc~count_lines -->
+<g id="program~~mode_high_low~~CallsGraph_edge1" class="edge"><title>proc~welcome&#45;&gt;proc~count_lines</title>
+<path fill="none" stroke="#000000" d="M215.214,-348C240.79,-348 279.796,-348 309.703,-348"/>
+<polygon fill="#000000" stroke="#000000" points="309.865,-351.5 319.865,-348 309.865,-344.5 309.865,-351.5"/>
+</g>
+<!-- proc~vector_destroy -->
+<g id="program~~mode_high_low~~CallsGraph_node12" class="node"><title>proc~vector_destroy</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node12"><a xlink:href="../proc/vector_destroy.html" xlink:title="vector_destroy">
+<polygon fill="#d9534f" stroke="#d9534f" points="395,-276 312,-276 312,-252 395,-252 395,-276"/>
+<text text-anchor="middle" x="353.5" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vector_destroy</text>
+</a>
+</g>
+</g>
+<!-- proc~vector_create&#45;&gt;proc~vector_destroy -->
+<g id="program~~mode_high_low~~CallsGraph_edge2" class="edge"><title>proc~vector_create&#45;&gt;proc~vector_destroy</title>
+<path fill="none" stroke="#000000" d="M226.537,-264C248.892,-264 277.436,-264 301.697,-264"/>
+<polygon fill="#000000" stroke="#000000" points="301.803,-267.5 311.803,-264 301.803,-260.5 301.803,-267.5"/>
+</g>
+<!-- proc~vector_increase_capacity -->
+<g id="program~~mode_high_low~~CallsGraph_node13" class="node"><title>proc~vector_increase_capacity</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node13"><a xlink:href="../proc/vector_increase_capacity.html" xlink:title="vector_increase_capacity">
+<polygon fill="#d9534f" stroke="#d9534f" points="420,-192 287,-192 287,-168 420,-168 420,-192"/>
+<text text-anchor="middle" x="353.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vector_increase_capacity</text>
+</a>
+</g>
+</g>
+<!-- proc~vector_append&#45;&gt;proc~vector_increase_capacity -->
+<g id="program~~mode_high_low~~CallsGraph_edge3" class="edge"><title>proc~vector_append&#45;&gt;proc~vector_increase_capacity</title>
+<path fill="none" stroke="#000000" d="M229.884,-180C244.186,-180 260.693,-180 276.867,-180"/>
+<polygon fill="#000000" stroke="#000000" points="276.873,-183.5 286.873,-180 276.873,-176.5 276.873,-183.5"/>
+</g>
+<!-- proc~qsort_reals -->
+<g id="program~~mode_high_low~~CallsGraph_node14" class="node"><title>proc~qsort_reals</title>
+<g id="a_program~~mode_high_low~~CallsGraph_node14"><a xlink:href="../proc/qsort_reals.html" xlink:title="qsort_reals">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="386.5,-24 320.5,-24 320.5,-0 386.5,-0 386.5,-24"/>
+<text text-anchor="middle" x="353.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">qsort_reals</text>
+</a>
+</g>
+</g>
+<!-- proc~stat_mode&#45;&gt;proc~qsort_reals -->
+<g id="program~~mode_high_low~~CallsGraph_edge5" class="edge"><title>proc~stat_mode&#45;&gt;proc~qsort_reals</title>
+<path fill="none" stroke="#000000" d="M219.347,-12C245.048,-12 281.91,-12 310.336,-12"/>
+<polygon fill="#000000" stroke="#000000" points="310.391,-15.5001 320.391,-12 310.391,-8.5001 310.391,-15.5001"/>
+</g>
+<!-- proc~qsort_reals&#45;&gt;proc~qsort_reals -->
+<g id="program~~mode_high_low~~CallsGraph_edge4" class="edge"><title>proc~qsort_reals&#45;&gt;proc~qsort_reals</title>
+<path fill="none" stroke="#000000" d="M326.053,-24.0139C316.468,-32.9717 325.617,-42 353.5,-42 370.927,-42 381.036,-38.4733 383.827,-33.6413"/>
+<polygon fill="#000000" stroke="#000000" points="387.166,-32.5916 380.947,-24.0139 380.459,-34.5975 387.166,-32.5916"/>
+</g>
+</g>
+</svg>
+</div>
+                <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+                <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                      </div>
+                      <div class="modal-body">
+                        
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="560pt" height="32pt"
+ viewBox="0.00 0.00 559.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-28 555.5,-28 555.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node"><title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="64,-24 0,-24 0,-0 64,-0 64,-24"/>
+<text text-anchor="middle" x="32" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node"><title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="136,-24 82,-24 82,-0 136,-0 136,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node"><title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="209.5,-24 154.5,-24 154.5,-0 209.5,-0 209.5,-24"/>
+<text text-anchor="middle" x="182" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node4" class="node"><title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="364,-24 228,-24 228,-0 364,-0 364,-24"/>
+<text text-anchor="middle" x="296" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node"><title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="436,-24 382,-24 382,-0 436,-0 436,-24"/>
+<text text-anchor="middle" x="409" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node"><title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="551.5,-24 454.5,-24 454.5,-0 551.5,-0 551.5,-24"/>
+<text text-anchor="middle" x="503" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a procedure to one which it calls. Dashed 
+    arrows point from an interface to procedures which implement that interface.
+    This could include the module procedures in a generic interface or the
+    implementation in a submodule of an interface in a parent module.
+    </p>
+    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+     
+    <br>
+
+     <section class="visible-xs visible-sm hidden-md">
+       
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-v_tick">v_tick</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-tick">tick</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-size">size</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-lun%7E2">lun</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-success%7E2">success</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-line%7E2">line</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-filen">FILEN</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-lnsize">LNSIZE</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-kernel">KERNEL</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-str">STR</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-et">ET</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-time">time</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-start_time">start_time</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-tick_time">tick_time</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-volume">volume</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html#variable-sigma_volume">sigma_volume</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </section>
+     <br class="visible-xs visible-sm hidden-md">
+
+     
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-v_tick"></span>type(VECTOR)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>v_tick</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-tick"></span>type(VECTOR_DATA)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>tick</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-size"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>size</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-lun%7E2"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>lun</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-success%7E2"></span>logical</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>success</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-line%7E2"></span>character(len=:),</td>
+  
+  
+  <td>allocatable</td><td>::</td>
+  <td><strong>line</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-filen"></span>integer,</td>
+  
+  
+  <td>parameter</td><td>::</td>
+  <td><strong>FILEN</strong></td><td> =</td><td> 128</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-lnsize"></span>integer,</td>
+  
+  
+  <td>parameter</td><td>::</td>
+  <td><strong>LNSIZE</strong></td><td> =</td><td> 60</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-kernel"></span>character(len=F)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>KERNEL</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-str"></span>character(len=L)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>STR</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-et"></span>double precision</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>ET</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-time"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>time</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-start_time"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>start_time</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-tick_time"></span>integer</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>tick_time</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-volume"></span>real(kind=8)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>volume</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-sigma_volume"></span>real(kind=8)</td>
+  
+  
+  <td></td><td>::</td>
+  <td><strong>sigma_volume</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+    
+    </div>
+  </div>
+
+  <section class="visible-xs visible-sm hidden-md">
+    <hr>
+    
+
+<div class="panel panel-default">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#allprogs-1">All Programs</a></h3></div>
+  <div id="allprogs-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../program/gerwazy.html">gerwazy</a>
+      
+      <a class="list-group-item" href="../program/mode_high_low.html">mode_high_low</a>
+      
+    </div>
+  </div>
+</div>
+
+
+  </section>
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2017 </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+            
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> gerwazy was developed by Georges Tomaka</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js'],
+        'HTML-CSS': { 
+           styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: '#000000 ! important'} }
+        }
+      });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>
