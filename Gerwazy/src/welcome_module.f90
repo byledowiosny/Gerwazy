@@ -9,7 +9,7 @@ module welcome_module
   public :: welcome
   character(len=4), public :: year
   character(len=2), public :: month
-  integer, public :: nlines, high_frequency, low_frequency
+  integer, public :: nlines, frequency
 
 contains
   subroutine welcome()
@@ -32,32 +32,22 @@ contains
        print*, 'The number must be equal 1,2 or 3! Please, try again.'
     endif
 
-    print*, 'The time series are arbitrarily ranged as of high or low frequency.'
+    print*, 'The time series are arbitrarily ranged from high to low frequency.'
     print*, 'Choose the number:'
-    print*, '1 - High'
-    print*, '2 - Low'
-    read*, high_low
-    if (high_low .eq. 1) then
-       print*, 'Choose the number:'
-       print*, '1 - Second'
-       print*, '2 - Minute'
-       print*, '3 - Hour'
-       read*, high_frequency
+    print*, '1 - Second'
+    print*, '2 - Minute'
+    print*, '3 - Hour'
+    print*, '4 - Day'
+    print*, '5 - Week'
+    print*, '6 - Month'
+    read*, frequency
+    if (frequency .lt. 7) then
        print*, 'Enter the year and month (yyyy mm):'
        read*, year, month
        call chdir(year//'/'//month//'/')
        call count_lines()
-    elseif (high_low .eq. 2) then
-       print*, 'Choose the number:'
-       print*, '1 - Day'
-       print*, '2 - Week'
-       print*, '3 - Month'
-       read*, low_frequency
-       print*, 'Enter the start year and end year (yyyy yyyy):'
-       read *, year_start, year_end
-       call chdir(year_start//'/')
     else
-       print*, 'The number must be equal 1,2 or 3! Please, try again.'
+       print*, 'The number must be equal 1,2,3,4,5 or 6! Please, try again.'
     endif
   end subroutine welcome
 
