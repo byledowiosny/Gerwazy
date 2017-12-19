@@ -1,0 +1,41 @@
+Eigen is a C++ template library for linear algebra, part of the KDE project 
+(http://eigen.tuxfamily.org).
+
+Types of matrices and vectors available:
+– Dense and sparse matrices and vectors;
+– Plain matrices/vectors and abstract expressions;
+– Triangular and diagonal matrices;
+– Column-major (the default) and row-major matrix storage.
+
+Linear algebra operations available:
+– Triangular, SVD, Cholesky, QR and LU solvers;
+– Eigen values/vectors solver for non-selfadjoint matrices;
+– Hessemberg decomposition;
+– Tridiagonal decomposition of a selfadjoint matrix.
+
+Interface with other packages for sparse matrices: TAUCS, umfpack, cholmod and SuperLU.
+
+Performance:
+Very efficient, see benchmark: http://eigen.tuxfamily.org/index.php?title=Benchmark.
+
+Portability (platforms and compilers supported) -
+standard C++ 98, compatible with any compliant compiler such as:
+– GCC, version 3.3 and newer;
+– MSVC (Visual Studio), 2005 and newer;
+– ICC, recent versions;
+– MinGW, recent versions.
+
+Installation: no dependency.
+
+Miscellaneous:
+– Templates supported;
+– Todo includes: interface to Lapack and eigensolver in nonselfadjoint case;
+– Examples of users:
+KDE related projects such as screensavers, kgllib, kglengine2d, solidkreator, painting and image editing Avogadro, an open source advanced molecular editor VcgLib, C++ template library for the manipulation and processing of triangular and tetrahedral meshes MeshLab, for the processing
+and editing of unstructured 3D triangular meshes and point cloud.
+The Yujin Robot company uses Eigen for the navigation and arm control of their next generation robots (switched from blitz, ublas and tvmet).
+
+Limitations:
+– Sparse matrices and vectors still experimental.
+
+Debian packages: libeigen2-dev, libeigen2-doc, libeigen3-dev, libeigen3-doc.
